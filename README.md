@@ -22,3 +22,7 @@ It seems pretty much all of these decices use the same chip, so it should work a
 I suggest installing these packages with `pip3`:
 
     pip3 install hidapi python3-xlib
+
+Please be aware, that you need extra packages like Cython, and various libraries (and their source packages) when installing the dependencies.
+I won't go into detail how to install these, here.
+
