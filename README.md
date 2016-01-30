@@ -10,7 +10,7 @@ It also may or may not be a shorthand for "foot switch settings" or something qu
 So far this client supports only the "[DIY-KeyboardV1.0](http://pcsensor.com/diy-keyboard.html)" device.
 
 The reason for that being, that it's the only one that I have. I may acquire the other products, though.
-It seems pretty much all of these decices use the same chip, so it should work at least similarly.
+It seems pretty much all of these devices use the same chip, so it should work at least similarly.
 
 ## Dependencies
 * Python 3.4 or higher
@@ -35,8 +35,8 @@ That's not exactly ideal...
 A GUI might be nice, too.
 
 ## Things that don't make sense
-The program understands `--super`, `--win`, `--command` to set the left keycode for the respective mod keys,
-but only `--rightsuper` to set the right mod key.
+The program understands `--super`, `--win`, `--command` to set the left keycode for the respective *left* mod keys,
+but only `--rightsuper` to set the *right* mod key, for example. This applies to all the mod key selectors.
 
 There are two reasons for that:
  1. I don't know these keys are dealt with on OSX, so I can't just assume `--rightoption` or something.
