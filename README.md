@@ -32,3 +32,14 @@ This is still too vague to put into a bullet list, so here's me being wordy:
 The whole thing kinda depends on the user's knowledge about keycodes, and especially the differenc in keycodes used within X, and by `kbd` on a linux console.
 
 A GUI might be nice, too.
+
+## Things that don't make sense
+The program understands `--super`, `--win`, `--command` to set the left keycode for the respective mod keys,
+but only `--rightsuper` to set the right mod key.
+
+There are two reasons for that:
+ 1. I don't know these keys are dealt with on OSX, so I can't just assume `--rightoption` or something.
+ 2. They don't even make much sense on Linux either, because they often map to vastly different types of mod keys.
+
+Setting the right keys is actually undocumented. The original Windows software is unable to set the right keys.
+I guess one might say the left keys are *default*.

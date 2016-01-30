@@ -17,10 +17,14 @@ Switch event parameters:
     -l, --left              set left mouse button
     -r, --right             set right mouse button
     -m, --middle            set middle button
-        --ctrl              set Ctrl mod key
-        --shift             set Shift mod key
-        --alt, --option     set Alt / Option mod key
-        --super, --win, --command   set Super / Win / Command mod key
+        --ctrl              set (left) Ctrl mod key
+        --shift             set (left) Shift mod key
+        --alt, --option     set (left) Alt / Option mod key
+        --super, --win, --command   set (left) Super / Win / Command mod key
+        --rightctrl         set right Ctrl mod key
+        --rightshift        set right Shift mod key
+        --rightalt          set right Alt mod key
+        --rightsuper        set right Super mod key
     -x PIXELS               set x-axis mouse movement [-128, 127]
     -y PIXELS               set y-axis mouse movement [-128, 127]
     -w PIXELS, --wheel=PIXELS   set mouse wheel movement [-128, 127]
@@ -33,6 +37,9 @@ when set to string, no other settings are permitted.
 Mod key names are provided so clarity is kept among operating systems.
 In fact '--super', '--win', '--command' set the same mod key code to
 the switch matrix.
+
+The otherwise unlabeled keys will set the left keys. The device has the
+ability to send the keycodes for right Control / Alt / Shift / Super.
 
 Remarks for mouse movement options (-x, -y, -w):
     x-axis: positive is right deflection
