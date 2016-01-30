@@ -1,4 +1,4 @@
-Usage: <program> [OPTION]...
+Usage: fss [OPTION]...
 Examines or sets the switch settings for devices based on the Microdia
 "Foot Switch" device. Manufactured by RDing Tech <http://www.pcsensor.com>.
 
@@ -12,8 +12,7 @@ Switch event parameters:
     -k KEY, --key=KEY       set switch to send KEY, which is either a
                               mapped symbol like 'a', an X name, like
                               'XF86AudioMute', 'KP_Enter', 'Up', etc.; or
-                              to a hexadecimal value, which will be set 
-                              directly to the internal value of the switch.
+                              to a positive integer number, the keycode
     -l, --left              set left mouse button
     -r, --right             set right mouse button
     -m, --middle            set middle button
@@ -29,7 +28,14 @@ Switch event parameters:
     -y PIXELS               set y-axis mouse movement [-128, 127]
     -w PIXELS, --wheel=PIXELS   set mouse wheel movement [-128, 127]
 
-        --string=STRING     set key to string value
+        --string=STRING     bind switch to string
+        --charlist=LIST     bind switch to string by setting a list of keycodes
+
+Raw overrides for key mappings:
+        --raw-mod=BITMAP    set raw bitmap for mod keys (0x00 - 0xff or
+                              0b00000000 - 0b11111111), default is 0x00
+        --raw-key=KEYCODE   set raw device value (not X or kbd keycode)
+        --raw-charlist=LIST   set switch to string, by using a list of raw values
 
 Any combination of values is permitted, except for one exception:
 when set to string, no other settings are permitted.
@@ -49,4 +55,5 @@ Remarks for mouse movement options (-x, -y, -w):
 TODO: check if the mouse stuff is affected by the latching bit
 
 Copyright 2016 Szymon 'polemon' Bereziak <polemon@gmail.com>
+
 License: ISC

@@ -16,7 +16,7 @@ It seems pretty much all of these decices use the same chip, so it should work a
 * Python 3.4 or higher
 * hidapi
 
-#### secondary dependencies
+#### Secondary dependencies
 * python3-Xlib
 
 I suggest installing these packages with `pip3`:
@@ -29,7 +29,7 @@ I won't go into detail how to install these, here.
 ## Planned features
 This is still too vague to put into a bullet list, so here's me being wordy:
 
-The whole thing kinda depends on the user's knowledge about keycodes, and especially the differenc in keycodes used within X, and by `kbd` on a linux console.
+The whole thing kinda depends on the user's knowledge about keycodes, and especially the difference in keycodes used within X, and by `kbd` on a linux console.
 
 A GUI might be nice, too.
 
@@ -42,4 +42,4 @@ There are two reasons for that:
  2. They don't even make much sense on Linux either, because they often map to vastly different types of mod keys.
 
 Setting the right keys is actually undocumented. The original Windows software is unable to set the right keys.
-I guess one might say the left keys are *default*.
+I guess one might say the left keys can be considered *default*.

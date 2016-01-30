@@ -118,11 +118,12 @@ class SwitchDef():
     class STRING(): pass
     class EVENT(): pass
 
-    type = None # either Response.STRING or Response.EVENT
+    type = None # either SwitchDef.STRING or SwitchDef.EVENT
     num  = None # switch number on switchboard matrix
 
-    _charlist =       []  # string data if response is a string
+    _charlist =       []  # string data (list of keycode values) if switch binds to a string
     _raw_charlist =   []  # this is gonna be a list containing the raw keycodes
+    # TODO ^---- well, that thing isn't there yet
     
     _key =          None    # Xlib keycode (sent to the system)
     _raw_key =      None    # raw keycode (number set in the controller)
