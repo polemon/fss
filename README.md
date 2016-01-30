@@ -26,3 +26,9 @@ I suggest installing these packages with `pip3`:
 Please be aware, that you need extra packages like Cython, and various libraries (and their source packages) when installing the dependencies.
 I won't go into detail how to install these, here.
 
+## Planned features
+This is still too vague to put into a bullet list, so here's me being wordy:
+
+The whole thing kinda depends on the user's knowledge about keycodes, and especially the differenc in keycodes used within X, and by `kbd` on a linux console.
+
+A GUI might be nice, too.
