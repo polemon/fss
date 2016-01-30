@@ -20,7 +20,7 @@ to be operated with feet. Either that, or the small six-button remote control is
 * hidapi
 
 #### Secondary dependencies
-* python3-Xlib
+* python3-xlib
 
 I suggest installing these packages with `pip3`:
 
