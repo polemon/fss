@@ -3,6 +3,7 @@ import sys
 import getopt
 from microdia import FootSwitch, SwitchDef
 
+from Xlib import XK, display
 
 def print_switch(sw):
     if sw.type == SwitchDef.STRING:
