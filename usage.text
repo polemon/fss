@@ -1,0 +1,45 @@
+Usage: <program> [OPTION]...
+Examines or sets the switch settings for devices based on the Microdia
+"Foot Switch" device. Manufactured by RDing Tech <http://www.pcsensor.com>.
+
+    (no arguments)          read all keys and print their settings
+    -s NUM, --switch=NUM    set switch number; if no other option is given
+                              that switch will be read; if other options
+                              are given, that switch will be set.
+    -h, --help              print this help and exit
+
+Switch event parameters:
+    -k KEY, --key=KEY       set switch to send KEY, which is either a
+                              mapped symbol like 'a', an X name, like
+                              'XF86AudioMute', 'KP_Enter', 'Up', etc.; or
+                              to a hexadecimal value, which will be set 
+                              directly to the internal value of the switch.
+    -l, --left              set left mouse button
+    -r, --right             set right mouse button
+    -m, --middle            set middle button
+        --ctrl              set Ctrl mod key
+        --shift             set Shift mod key
+        --alt, --option     set Alt / Option mod key
+        --super, --win, --command   set Super / Win / Command mod key
+    -x PIXELS               set x-axis mouse movement [-128, 127]
+    -y PIXELS               set y-axis mouse movement [-128, 127]
+    -w PIXELS, --wheel=PIXELS   set mouse wheel movement [-128, 127]
+
+        --string=STRING     set key to string value
+
+Any combination of values is permitted, except for one exception:
+when set to string, no other settings are permitted.
+
+Mod key names are provided so clarity is kept among operating systems.
+In fact '--super', '--win', '--command' set the same mod key code to
+the switch matrix.
+
+Remarks for mouse movement options (-x, -y, -w):
+    x-axis: positive is right deflection
+    y-axis: positive is downwards deflection
+    wheel:  positive is scroll up (or button 4, down is button 5)
+
+TODO: check if the mouse stuff is affected by the latching bit
+
+Copyright 2016 Szymon 'polemon' Bereziak <polemon@gmail.com>
+License: ISC
