@@ -47,3 +47,9 @@ There are two reasons for that:
 
 Setting the right keys is actually undocumented. The original Windows software is unable to set the right keys.
 I guess one might say the left keys can be considered *default*.
+
+## Links
+ * Project on github: https://github.com/polemon/fss
+ * gitclone: https://github.com/polemon/fss.git
+ * Wiki: https://github.com/polemon/fss
+
