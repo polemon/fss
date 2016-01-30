@@ -51,5 +51,5 @@ I guess one might say the left keys can be considered *default*.
 ## Links
  * Project on github: https://github.com/polemon/fss
  * gitclone: https://github.com/polemon/fss.git
- * Wiki: https://github.com/polemon/fss
+ * Documentation Wiki: https://github.com/polemon/fss/wiki
 
