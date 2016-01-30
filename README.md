@@ -12,6 +12,9 @@ So far this client supports only the "[DIY-KeyboardV1.0](http://pcsensor.com/diy
 The reason for that being, that it's the only one that I have. I may acquire the other products, though.
 It seems pretty much all of these devices use the same chip, so it should work at least similarly.
 
+Even though they're all identify themselves as "FootSwitch", many of these products obviously aren't meant
+to be operated with feet. Either that, or the small six-button remote control is for people with very small feet.
+
 ## Dependencies
 * Python 3.4 or higher
 * hidapi
