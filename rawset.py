@@ -18,15 +18,15 @@ print(dev.get_product_string())
 dev.write([0x01, 0x80, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00])
 time.sleep(0.2)
 
-s_char = 0xf2
-#
-#print("writing...")
-#for i in range(0, 14):
-#    dev.write([0x01, 0x81, 0x08, i + 1, 0x00, 0x00, 0x00, 0x00])
-#    time.sleep(0.1)
-#    #dev.write([0x08, 0x04, s_char + i*6, s_char + i*6 + 1, s_char + i*6 + 2, s_char + i*6 + 3, s_char + i*6 + 4, s_char + i*6 + 5 ])
-#    dev.write([0x03, 0x04, s_char + i, 0x00, 0x00, 0x00, 0x00, 0x00 ])
-#    time.sleep(0.1)
+s_char = 0x04
+
+print("writing...")
+for i in range(0, 14):
+    dev.write([0x01, 0x81, 0x08, i + 1, 0x00, 0x00, 0x00, 0x00])
+    time.sleep(0.1)
+    #dev.write([0x08, 0x04, s_char + i*6, s_char + i*6 + 1, s_char + i*6 + 2, s_char + i*6 + 3, s_char + i*6 + 4, s_char + i*6 + 5 ])
+    dev.write([0x08, 0x01, 0x00, s_char + i, 0x00, 0x00, 0x00, 0x00 ])
+    time.sleep(0.1)
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
